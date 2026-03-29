@@ -19,6 +19,7 @@ answerButton.addEventListener("click", displayEnglish);
 let playAgainButton = document.querySelector(".playAgain");  
 playAgainButton.addEventListener("click", playAgain);
 
+// let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
 let h4 = document.querySelector("h4");
 
@@ -176,13 +177,11 @@ function startGame(){
 }
 
 function displayEnglish(){
-
     if(hindiBox.innerText === ""){
         englishBox.innerText = "";
     }else{
         englishBox.innerText = englishArray[index];
     }
-
     setTimeout(()=>{
         hindiBox.innerText = "";
         englishBox.innerText = "";
