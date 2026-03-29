@@ -5,14 +5,14 @@
 body{
     background-color: aqua;
 }
-h1, h2, h3 {
+h2, h3, h4 {
     margin: 10px;
     text-align: center;
 }
-h1, h3{
+h2, h3{
     color: purple;
 }
-h2{
+h4{
     color:darkblue;
 }
 
