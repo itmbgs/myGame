@@ -2,22 +2,23 @@
     margin: 0;
     padding: 0;
 }
-h1{
-    margin: 15px;
+h1, h2, h3 {
+    margin: 10px;
     text-align: center;
+}
+h1, h3{
     color: purple;
 }
 h2{
-    margin: 10px;
-    text-align: center;
-    color: blue;
+    color:darkblue;
 }
+
 .box {
     height: 100px;
     width: 100px;
     border: 2px solid whitesmoke;
     margin: 20px;
-    font-size: 52px;
+    font-size: 28px;
     color: white;
     line-height: 100px;
     text-align: center;
@@ -53,16 +54,14 @@ button {
     margin: auto;
     width: 300px;
     background-color: aliceblue;
-    /* border: 1px solid black; */
     border-radius: 5px;
 }
 .option{
     height: 100px;
     width: 100px;
     border: 2px solid black;
-    margin: 20px;
-    font-size: 36px;
-    font-weight: bold;
+    margin: 15px;
+    font-size: 28px;
     color: white;
     line-height: 100px;
     text-align: center;
