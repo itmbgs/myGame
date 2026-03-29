@@ -19,13 +19,13 @@ answerButton.addEventListener("click", displayEnglish);
 let playAgainButton = document.querySelector(".playAgain");  
 playAgainButton.addEventListener("click", playAgain);
 
-let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
+let h4 = document.querySelector("h4");
 
 let score = 0;
 let maxScore = 0;
 let lastGameScore = 0;
-h3.innerText = `Max Score: ${maxScore} | Last Score: ${lastGameScore}`;
+h4.innerText = `Max Score: ${maxScore} | Last Score: ${lastGameScore}`;
 
 let hindiArray = ["अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ",
                 "ए ", "ऐ", "ओ", "औ", "अं", "अः",
@@ -130,7 +130,7 @@ function verifyAnswer(){
     } 
     else if(this.innerText === englishArray[index]){
         score = score + 1;
-        h2.innerText = `Correct..! Score: ${score}`;
+        h3.innerText = `Correct..! Score: ${score}`;
         displayEnglish();
     }
     else{
@@ -146,11 +146,11 @@ function verifyAnswer(){
         if(lastGameScore > maxScore){
             maxScore = lastGameScore;
         }
-        h2.innerText = `Game over..! Score: ${score}`;
-        h3.innerText = `Max Score: ${maxScore} | Last Score: ${lastGameScore}`;
+        h3.innerText = `Game over..! Score: ${score}`;
+        h4.innerText = `Max Score: ${maxScore} | Last Score: ${lastGameScore}`;
         setTimeout(()=>{
             score = 0;
-            h2.innerText = "Click the correct option";
+            h3.innerText = "Click the correct option";
         }, 3000);
     }
 }
